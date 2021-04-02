@@ -128,3 +128,23 @@ SELECT COUNT(company)
 FROM people
 WHERE state_code='CA';
 ```
+
+## CHALLENGE TASK
+Description: 
+Quiz participants were asked what they preferred to recieve as a prize upon completion of the quiz, a shirt or hat! Your company is working with a third party vendor to send these rewards but the vendor needs participant information to be able to ship the goods correctly. 
+
+Prize must show their name, team, and quiz score. The people should be separated by prizes. Then to break down the list by team.
+
+Use the quizdata database and people table for this challenge
+
+Explore/Analyze Data: Find expected number of teams 
+```
+select count(DISTINCT(team)) as number_of_teams
+from people
+```
+Main Query
+```
+SELECT shirt_or_hat, team, last_name, first_name, quiz_points
+FROM people
+ORDER BY shirt_or_hat, team;
+```

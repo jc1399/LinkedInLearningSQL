@@ -2,7 +2,7 @@
 
 ## Areas of Learning/Methods Practiced
 * Using SQLite with DB browser interface to write querys and practice SQL Language
-* Practice with using version control software to upload notes to githuub to use for later reference
+* Practice with using version control software to upload notes to github to use for later reference
 * Utilizing Markdown Language to effectively keep track of personal course notes
 
 ## Introduction
@@ -18,7 +18,7 @@
 * Statements are...
 	* Whitespace independent
 	* Composed of clauses made of elements, field names, table names, predicates with expresions
-	* Sould end in a semicolon (good practice)
+	* Should end in a semicolon (good practice)
 * SQL can be considered for uses as a ...
 	* Data Manipulation Language
 		* Edit data in the database
