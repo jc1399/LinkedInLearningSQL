@@ -7,11 +7,11 @@
 
 ## Introduction
 
-#### Database
+### Database
 * A collection of information organized by columns (fields) and rows (records)
 * DB allow to make schemas (realtionships/rules) of the tables
 
-#### SQL
+### SQL
 * Structured Query Language
 * Let's a user form questions a DB can respond to
 * Language statements is made up of *Clauses* or keywords in a statement (SELECT, FROM, ORDER BY)
@@ -26,3 +26,14 @@
 	* Data Definition Language
 		* Edit the structure (schema) of the database
 		* Add, change, or remove fields or tables
+
+## Ask for Data from a Database
+
+### SELECT 
+* Tells DB that we want to collect spectific information to return to us
+* Example
+	* SELECT 'Hello World!'; --*Single quotes in select statement will return literal string*
+	* SELECT first_name FROM people
+* Can specify multiple fields in SELECT statement by seperating each one with a comma
+* Asterisk symbol will return all columns in table. Rarely used in report. Too much information
+* Selecting data does not change anything in DB. Just lets us read data
