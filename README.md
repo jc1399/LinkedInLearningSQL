@@ -53,7 +53,7 @@ FROM people
 WHERE state_code='CA' AND shirt_or_hat='shirt'
 ```
 
-* Find names of people in california and asked for a shirt and did NOT sign up for Angry Ants Team
+Find names of people in california and asked for a shirt and did NOT sign up for Angry Ants Team
 ```
 SELECT first_name, last_name
 FROM people
@@ -62,7 +62,7 @@ WHERE state_code='CA' AND shirt_or_hat='shirt' AND team!='Angry Ants';
 * keywords IS and IS NOT
 * not equals operator: <>
 
-* Find names of people in california or colorado and asked for a shirt
+Find names of people in california or colorado and asked for a shirt
 ```
 SELECT first_name, last_name, shirt_or_hat, state_code
 FROM people
@@ -75,28 +75,28 @@ WHERE (state_code='CA' OR state_code='CO') AND shirt_or_hat='shirt';
 	* Returns results that match part of a strins
 	* The % represents the part of the string we dont care about
 
-* Find all people from states that begin with C
+Find all people from states that begin with C
 ```
 SELECT *
 FROM people
 WHERE state_code LIKE 'C%';
 ```
-* Find all first names ending with a
+Find all first names ending with a
 ```
 SELECT *
 FROM people
 WHERE first_name LIKE '%A';
 ```
-	* Note that even though the character after % is capital, it will return names that have A lower case
+Note that even though the character after % is capital, it will return names that have A lower case
 
-* Find all first names containing ON
+Find all first names containing ON
 ```
 SELECT *
 FROM people
 WHERE first_name LIKE '%ON%';
 ```
 
-* Find all LLC companies
+Find all LLC companies
 ```
 SELECT *
 FROM people
