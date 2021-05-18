@@ -56,3 +56,32 @@ WHERE state_code(
 ### Transforming Data 
 We are able to transform data in the database to something we need in the database.(chage case of string, converting value to different type, trimming a value)
 
+To present data in a perticular way... 
+
+Change data to upper or lower case
+```
+SELECT LOWER(first_name), UPPER(last_name)
+FROM people;
+```
+
+Return substring of the last name starting from 
+```
+SELECT first_name, SUBSTR(last_name, 1, 5)
+FROM
+```
+
+Cast data in the database
+```
+SELECT quiz_points
+FROM people
+ORDER BY CAST quiz_points as CHAR)
+```
+
+### Aliasing with AS
+To change the return name of a field to make it clear what information is in the column
+Especially helpful when exporting to spreadsheet or providing output to an application
+Good to use names without spaces
+
+### Aliasing with AS
+
+
