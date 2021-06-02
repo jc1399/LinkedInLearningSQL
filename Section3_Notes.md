@@ -84,4 +84,13 @@ Good to use names without spaces
 
 ### Aliasing with AS
 
+## Challenge Task
+Return the max and average quiz score by state. Order the results by the average quiz score
+
+```
+SELECT state_code, MAX(quiz_points) as maxpoints, AVG(quiz_points) as avgpoints
+FROM people
+GROUP BY state_code
+ORDER BY avgpoints DESC
+```
 
